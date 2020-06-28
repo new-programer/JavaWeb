@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c7ec02b-430b-4602-b8e1-e01dbb010585" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\server\.m2\repository" />
+        <option name="userSettingsFile" value="D:\server\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1d5Cep88ATN86UJATfJIudi3HuS" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.JdbcTest.test4">
+    <configuration name="JdbcTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.usc.spring.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.usc.spring.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="edu.usc.spring.jdbc.JdbcTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.usc.spring.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.usc.spring.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="edu.usc.spring.jdbc.JdbcTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JdbcTest.test4" />
+        <item itemvalue="JUnit.JdbcTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c7ec02b-430b-4602-b8e1-e01dbb010585" name="Default Changelist" comment="" />
+      <created>1591705664937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591705664937</updated>
+      <workItem from="1591705668937" duration="5679000" />
+      <workItem from="1591718699283" duration="1311000" />
+      <workItem from="1591779533038" duration="465000" />
+      <workItem from="1591780834580" duration="707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2281" y="75" key="#SQL_Dialects" timestamp="1591707828330">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2281" y="75" key="#SQL_Dialects/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591707828330" />
+    <state x="2281" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591706082653">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2281" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591706082653" />
+    <state x="2479" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1591708334261">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2479" y="93" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591708334261" />
+    <state x="2281" y="75" key="GrepConsoleSettings" timestamp="1591709683690">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2281" y="75" key="GrepConsoleSettings/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591709683690" />
+    <state width="1495" height="308" key="GridCell.Tab.0.bottom" timestamp="1591709686305">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state width="1495" height="308" key="GridCell.Tab.0.bottom/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591709686305" />
+    <state width="1495" height="308" key="GridCell.Tab.0.center" timestamp="1591709686305">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state width="1495" height="308" key="GridCell.Tab.0.center/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591709686305" />
+    <state width="1495" height="308" key="GridCell.Tab.0.left" timestamp="1591709686305">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state width="1495" height="308" key="GridCell.Tab.0.left/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591709686305" />
+    <state width="1495" height="308" key="GridCell.Tab.0.right" timestamp="1591709686305">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state width="1495" height="308" key="GridCell.Tab.0.right/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591709686305" />
+    <state width="304" height="538" key="HiddenNamespacesPopup" timestamp="1591706094471">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state width="304" height="538" key="HiddenNamespacesPopup/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591706094471" />
+    <state x="2219" y="72" key="Maven.ArtifactSearchDialog" timestamp="1591706734716">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2219" y="72" key="Maven.ArtifactSearchDialog/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591706734716" />
+    <state x="195" y="125" key="SettingsEditor" timestamp="1591718655098">
+      <screen x="0" y="0" width="1328" height="966" />
+    </state>
+    <state x="195" y="125" key="SettingsEditor/0.0.1328.966@0.0.1328.966" timestamp="1591718655098" />
+    <state x="346" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1591780870825">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="299" y="306" key="com.intellij.ide.util.TipDialog/0.0.1328.966@0.0.1328.966" timestamp="1591718700945" />
+    <state x="346" y="264" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1591780870825" />
+    <state x="2" y="0" key="new project wizard" timestamp="1591781542282">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="2" y="0" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1591781542281" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: site.ericblog.sbootvuefirst.pojo
+server:
+  port: 8888
+spring:
+  application:
+    name: table-server
+  datasource:
+    #MySql配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/springboot?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: ericgao

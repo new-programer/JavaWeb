@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="diy">
+    <output-path>$PROJECT_DIR$/out/artifacts/diy</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="diySpringBoot/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="diySpringBoot" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

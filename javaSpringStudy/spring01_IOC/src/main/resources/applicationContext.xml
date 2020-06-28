@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--配置自动扫描范围(这里表示只扫描 Service 注解的类)-->
+    <context:component-scan base-package="edu.usc.spring.ioc.service" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+
+
+    <!--注入方式一： 通过构造函数-->
+    <bean class="edu.usc.spring.ioc.model.User" id="user">
+        <!--注意：User的有参构造方法有几个参数，这里就应该配置几个参数，不然会报错-->
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="username" value="ericgao" />
+        <constructor-arg name="address" value="USC, HengYang" />
+    </bean>
+
+    <!--注入方式二： 通过set方法(这种方式最常用)-->
+    <bean class="edu.usc.spring.ioc.model.User" id="user3">
+        <!--set方法注入配置-->
+        <property name="id" value="2" />
+        <property name="username" value="peterli" />
+        <property name="address" value="HNU, ChangSha" />
+    </bean>
+
+    <!--注入方式三： 通过通过 p 名称空间（本质上也是set方法注入）
+    需要导入名称空间：xmlns:p="http://www.springframework.org/schema/p"
+    -->
+    <bean class="edu.usc.spring.ioc.model.User" id="user4" p:username="spring" p:id="3" p:address="TsingHua"/>
+
+
+    <!--静态工厂注入：将从OkHttpStaticFactory类中得到的OkHttpClient 添加到spring容器-->
+<!--    <bean class="edu.usc.spring.ioc.model.OkHttpStaticFactory" factory-method="getInstance" id="okHttpClient" />-->
+
+
+    <!--实例工厂注入： 将从OkHttpFactory类中得到的OkHttpClient 添加到spring容器-->
+        <!--1.先得到 实例工厂 的实例 okHttpFactory-->
+    <bean class="edu.usc.spring.ioc.OkHttpFactory" id="okHttpFactory" />
+        <!--2.获得 实例工厂 的实例 okHttpFactory 后，再通过该实例获得 okHttpClient-->
+    <bean class="okhttp3.OkHttpClient" factory-bean="okHttpFactory" factory-method="getInstance" id="okHttpClient"/>
+
+
+    <!--                ！！！复杂属性的注入！！！                 -->
+        <!--1.类对象的注入-->
+    <bean class="edu.usc.spring.ioc.model.User" id="user5">
+        <!--因为user的cat属性是一个对象，故需要先获取这个Cat对象后才能进行注入
+            <bean class="edu.usc.spring.ioc.model.Cat" id="cat">
+                <property name="age" value="1" />
+                <property name="name" value="miaomiao" />
+            </bean>
+        -->
+        <property name="id" value="4" />
+        <property name="username" value="hejun" />
+        <property name="address" value="sh, china" />
+        <property name="cat" ref="cat" />  <!--也可以写成如下(更简单)：
+
+        <property name="cat">
+            <bean class="edu.usc.spring.ioc.model.Cat">
+                <property name="name" value="cat_miao" />
+                <property name="age" value="5" />
+            </bean>
+        </property>
+        -->
+
+    </bean>
+    <bean class="edu.usc.spring.ioc.model.Cat" id="cat">
+        <property name="age" value="1" />
+        <property name="name" value="miaomiao" />
+    </bean>
+
+
+        <!--2.数组的注入-->
+    <bean class="edu.usc.spring.ioc.model.User" id="user6">
+        <property name="id" value="4" />
+        <property name="username" value="hejun" />
+        <property name="address" value="sh, china" />
+        <property name="cats">
+            <array>
+                <ref bean="cat"/>
+                <bean class="edu.usc.spring.ioc.model.Cat" id="cat2">
+                    <property name="age" value="3" />
+                    <property name="name" value="mimi" />
+                </bean>
+            </array>
+        </property>
+
+        <property name="favorites">
+            <list>
+                <value>basketball</value>
+                <value>football</value>
+            </list>
+        </property>
+    </bean>
+
+
+        <!--3.Map的注入-->
+    <bean class="edu.usc.spring.ioc.model.User" id="user7">
+        <property name="cats">
+            <array>
+                <ref bean="cat"/>
+                <bean class="edu.usc.spring.ioc.model.Cat" id="cat2">
+                    <property name="age" value="3" />
+                    <property name="name" value="mimi" />
+                </bean>
+            </array>
+        </property>
+
+        <property name="favorites">
+            <list>
+                <value>basketball</value>
+                <value>football</value>
+            </list>
+        </property>
+
+        <property name="details" >
+            <map>
+                <entry key="gender" value="male" />
+                <entry key="age" value="22" />
+            </map>
+        </property>
+
+        <property name="info" >
+            <props>
+                <prop key="phone">10086</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="edu.usc.spring.ioc.DataSource" id="ds">
+        <property name="url" value="dsUrl"/>
+        <property name="username" value="dsName" />
+        <property name="password" value="dsPass" />
+    </bean>
+
+    <beans profile="dev" >
+        <bean class="edu.usc.spring.ioc.DataSource" id="devDs">
+            <property name="url" value="devUrl"/>
+            <property name="username" value="devName" />
+            <property name="password" value="devPass" />
+        </bean>
+    </beans>
+
+    <beans profile="prod" >
+        <bean class="edu.usc.spring.ioc.DataSource" id="prodDs">
+            <property name="url" value="prodUrl"/>
+            <property name="username" value="prodName" />
+            <property name="password" value="prodPass" />
+        </bean>
+    </beans>
+</beans>

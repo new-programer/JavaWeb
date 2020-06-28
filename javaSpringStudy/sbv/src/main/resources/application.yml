@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    #MySql配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/easyproject?useUnicode=true&characterEncoding=UTF-8&useSSL=false&severTimezone=UTC
+    username: root
+    password: ericgao
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: edu.usc.sbv.model
+
+server:
+  port: 9000
